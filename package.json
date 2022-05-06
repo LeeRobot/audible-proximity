@@ -12,15 +12,14 @@
     "Bluetooth beacons",
     "audio"
   ],
-  "version": "0.2.2",
+  "version": "0.2.0",
   "engines": {
     "node": ">=6.0.0"
   },
   "bin": "./bin/audible-proximity",
   "main": "./lib/audibleproximity.js",
   "scripts": {
-    "start": "node bin/audible-proximity",
-    "debug": "node bin/audible-proximity-debug"
+    "start": "node bin/audible-proximity"
   },
   "repository": {
     "type": "git",

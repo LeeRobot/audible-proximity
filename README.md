@@ -32,23 +32,6 @@ By default, audio files are expected to be found in the data/audio subfolder of 
 A Bluetooth beacon transmitting an [InteroperaBLE Identifier](https://reelyactive.github.io/interoperable-identifier/) with the entity UUID __496f4944-434f-4445-b73e-2e2f2e6d7033__ will have its 28-bit instance ID interpreted as the filename of the associated .mp3 file.
 
 
-Debug Mode
-----------
-
-Alternatively, start __audible-proximity__ with the command `npm run debug` to print status updates to the console for debugging and to facilitate the tweaking of parameters.
-
-
-Run-on-Boot
------------
-
-To run __audible-proximity__ automatically every time the Pi boots up:
-- Copy the unit file to the systemd system folder with the command `sudo cp units/audible-proximity-pi.service /lib/systemd/system`
-- Enable the audible-proximity service with the command `sudo systemctl enable audible-proximity-pi.service`
-- Start the audible-proximity service with the command `sudo systemctl start audible-proximity-pi.service`
-
-Note that it may be necessary to edit the WorkingDirectory and/or ExecStart paths to match the installed location of the __audible-proximity__ repository and npm, respectively.
-
-
 License
 -------
 
